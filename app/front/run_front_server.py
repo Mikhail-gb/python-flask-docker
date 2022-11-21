@@ -29,7 +29,7 @@ def get_prediction(sepal_length, sepal_width, petal_length, petal_width):
     }
     result = {}
 
-    myurl = "http://0.0.0.0:8180/predict"
+    myurl = "http://0.0.0.0:9180/predict"
     with Session() as s:
         s.headers.update({'Content-Type': 'application/json; charset=utf-8'})
         with s.post(myurl, json=body) as r:
@@ -77,4 +77,4 @@ def predict_form():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8181, debug=True)
+    app.run(host='0.0.0.0', port=9181, debug=True)
