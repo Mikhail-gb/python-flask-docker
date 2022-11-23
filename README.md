@@ -29,8 +29,8 @@ $ docker build -t gb/lesson_9 .
 ### Запускаем контейнер
 
 Здесь Вам нужно создать каталог локально и сохранить туда предобученную модель (<your_local_path_to_pretrained_models> нужно заменить на полный путь к этому каталогу)
-```
+
 $ docker run -d -p 9180:9180 -p 9181:9181 -v <your_local_path_to_pretrained_models>:/app/app/models gb/lesson_9
-```
+
 
 ### Переходим на localhost:9181
